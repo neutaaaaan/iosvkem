@@ -1,0 +1,171 @@
+# vim: ft=colortemplate fdm=marker
+
+# Information {{{
+# Mandatory
+Full name:   Iosevka Scheme
+Short name:  iosvkem
+Author:      neutaaaaan
+Maintainer:  neutaaaaan
+# Optional
+Website: github.com/neutaaaaan/iosvkem
+Description: Remake and minor tweaks of the colourscheme be5invis used to showcase his typeface, Iosevka.
+License: 
+Terminal Colors: 256
+Option Prefix: dark
+# }}}
+
+# Documentation {{{
+Include: _help.colortemplate
+# }}}
+
+Background: dark
+
+# Color palette {{{
+# Color name                GUI         Base256    Base16 (optional)
+Color: black                #1b1d1e     ~   
+Color: greyblack            #505050     ~   
+Color: brightblack          #808080     ~   
+
+Color: white                #dddddd     ~   
+Color: brightwhite          #ffffff     ~   
+
+Color: red                  #d02b61     ~   
+Color: green                #60aa00     ~   
+Color: yellow               #d08928     ~   
+Color: blue                 #6c9ef8     ~   
+Color: purple               #b77fdb     ~   
+Color: greyblue             #6688aa     ~   
+Color: teal                 #00aa80     ~   
+
+Color: diffred              #cc4040     ~   
+Color: diffgreen            #40bb40     ~   
+Color: diffblue             #80aacc     ~   
+
+Color: uipink               #fc20bb     ~   
+Color: uilime               #bbfc20     ~   
+Color: uiteal               #20fcbb     ~   
+Color: uiblue               #20bbfc     ~   
+Color: uipurple             #bb20fc     ~   
+Color: uiamber              #fcbb20     ~   
+Color: uiblack              #303030     ~   
+
+Color: errorred             #ff2040     ~   
+
+
+# You may use hexadecimal values, too, and you may provide an explicit base-256 color:
+# }}}
+
+# Default highlight groups {{{
+verbatim
+if !has('gui_running') && get(g:, '@optionprefix_transp_bg', 0)
+endverbatim
+    # Transparent background
+    Normal           white             none
+    # See `:help terminal-size-color`
+    Terminal         white             none
+verbatim
+else
+endverbatim
+    # Opaque background
+    Normal           white             black
+    Terminal         white             black
+verbatim
+endif
+endverbatim
+
+# Group              Foreground        Background        Attributes
+ColorColumn          none              uiblack
+Conceal              none              none
+Cursor               none              none              reverse
+CursorColumn         white             black
+CursorLine           none              black
+CursorLineNr         uiblue            black
+DiffAdd              diffgreen         black             reverse
+DiffChange           diffblue          black             reverse
+DiffDelete           diffred           black             reverse
+DiffText             uiamber           black             reverse
+Directory            white             black
+EndOfBuffer          white             black
+ErrorMsg             white             black             reverse
+FoldColumn           white             black
+Folded               white             black             italic
+IncSearch            uiamber           black             t=reverse g=standout
+LineNr               greyblack         black
+MatchParen           uipink            black             t=bold,reverse g=bold,standout
+ModeMsg              white             black
+MoreMsg              white             black
+NonText              white             black  
+Pmenu                white             uiblack
+PmenuSbar            white             black
+PmenuSel             uipink            uiblack           t=bold g=bold 
+PmenuThumb           white             black
+Question             white             black
+QuickFixLine     ->  Search
+Search               uiblue            black             t=reverse g=standout
+SignColumn           white             black
+SpecialKey           white             black
+SpellBad             uipink            black             s=red
+SpellCap             uiblue            black             s=blue
+SpellLocal           uipurple          black             s=purple
+SpellRare            uiteal            black             s=teal reverse
+StatusLine           white             black
+StatusLineNC         white             black
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+TabLine              white             black
+TabLineFill          white             black
+TabLineSel           white             black
+Title                white             black
+VertSplit            greyblack         black
+Visual               none              uiblack 
+VisualNOS            none              uiblack
+WarningMsg           white             black
+WildMenu             uiblue            black
+# Other conventional group names (see `:help group-name`)
+Boolean           -> Constant
+Character         -> Constant
+Comment              brightblack       none              t=italic g=italic
+Conditional       -> Statement
+Constant             green             none
+Define            -> PreProc
+Debug             -> Special
+Delimiter         -> Special
+Error                errorred          black             t=reverse,bold g=standout,bold
+Exception         -> Statement
+Float             -> Constant
+Function          -> Identifier
+Identifier           purple            none
+Ignore               white             none
+Include           -> PreProc
+Keyword           -> Statement
+Label             -> Statement
+Macro             -> PreProc
+Number            -> Constant
+Operator          -> Statement
+PreCondit         -> PreProc
+PreProc              greyblue          none
+Repeat            -> Statement
+Special              red               none
+SpecialChar       -> Special
+SpecialComment    -> Special
+Statement            blue              none
+StorageClass      -> Type
+String               yellow            none
+Structure         -> Type
+Tag               -> Special
+Todo                 uiteal            none              t=reverse,bold g=standout,bold
+Type                 teal              none
+Typedef           -> Type
+Underlined           white             none
+# See `:help lCursor`
+lCursor           -> Cursor
+# See `:help CursorIM`
+CursorIM             none              fg
+# See `:help window-toolbar`
+ToolbarLine          none              black
+ToolbarButton        white             black             bold
+# }}}
+
+# Additional highlight groups {{{
+# Add additional highlight groups here if you want
+# }}}
