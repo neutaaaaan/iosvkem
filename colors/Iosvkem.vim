@@ -1,14 +1,14 @@
-" Name:         Iosevka Scheme
+" Name:         Iosvkem
 " Description:  Remake and minor tweaks of the colourscheme be5invis used to showcase his typeface, Iosevka.
 " Author:       neutaaaaan
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Sun 03 Jun 2018 06:26:06 PM CEST
+" Last Updated: Sun 03 Jun 2018 08:20:42 PM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
-  echoerr '[Iosevka Scheme] There are not enough colors.'
+  echoerr '[Iosvkem] There are not enough colors.'
   finish
 endif
 
@@ -19,7 +19,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'iosvkem'
+let g:colors_name = 'Iosvkem'
 
 " Color similarity table (dark background)
 "     uiblack: GUI=#303030/rgb( 48, 48, 48)  Term=236 #303030/rgb( 48, 48, 48)  [delta=0.000000]
