@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Sun 03 Jun 2018 08:20:42 PM CEST
+" Last Updated: Tue 05 Jun 2018 11:23:06 PM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -138,6 +138,20 @@ hi! link lCursor Cursor
 hi CursorIM ctermfg=NONE ctermbg=fg guifg=NONE guibg=fg guisp=NONE cterm=NONE gui=NONE
 hi ToolbarLine ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH1 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH2 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH3 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH4 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH5 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH6 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownLinkTextDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownLinkDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownListMarker ctermfg=140 ctermbg=NONE guifg=#b77fdb guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownLinkText ctermfg=111 ctermbg=NONE guifg=#6c9ef8 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownUrl ctermfg=239 ctermbg=NONE guifg=#505050 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownBoldDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownItalicDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi markdownBoldItalicDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 finish
 
 " Background: dark
@@ -254,3 +268,17 @@ finish
 " CursorIM             none              fg
 " ToolbarLine          none              black
 " ToolbarButton        white             black             bold
+" markdownH1           brightwhite    none        t=bold g=bold
+" markdownH2           brightwhite    none        t=bold g=bold
+" markdownH3           brightwhite    none        t=bold g=bold
+" markdownH4           brightwhite    none        t=bold g=bold
+" markdownH5           brightwhite    none        t=bold g=bold
+" markdownH6           brightwhite    none        t=bold g=bold
+" markdownLinkTextDelimiter        red            none
+" markdownLinkDelimiter            red            none
+" markdownListMarker   purple         none        t=bold g=bold
+" markdownLinkText     blue           none
+" markdownUrl          greyblack      none
+" markdownBoldDelimiter            red            none
+" markdownItalicDelimiter          red            none
+" markdownBoldItalicDelimiter      red            none

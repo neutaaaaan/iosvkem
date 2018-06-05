@@ -168,4 +168,18 @@ ToolbarButton        white             black             bold
 
 # Additional highlight groups {{{
 # Add additional highlight groups here if you want
+markdownH1           brightwhite    none        t=bold g=bold
+markdownH2           brightwhite    none        t=bold g=bold
+markdownH3           brightwhite    none        t=bold g=bold
+markdownH4           brightwhite    none        t=bold g=bold
+markdownH5           brightwhite    none        t=bold g=bold
+markdownH6           brightwhite    none        t=bold g=bold
+markdownLinkTextDelimiter        red            none
+markdownLinkDelimiter            red            none
+markdownListMarker   purple         none        t=bold g=bold
+markdownLinkText     blue           none
+markdownUrl          greyblack      none
+markdownBoldDelimiter            red            none
+markdownItalicDelimiter          red            none
+markdownBoldItalicDelimiter      red            none
 # }}}
