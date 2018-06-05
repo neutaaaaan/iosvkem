@@ -19,12 +19,16 @@ and fix them, but help is most welcome.
 
 - I will eventually refactor the dayglo colours out, most likely as an option.
 
-- It is unlikely I'll ever add anything language-specific to the colourscheme
-beyond minimal but proper markdown support.
-I have PTSD from looking into the code for some of the more popular
-colourschemes around.
-If you feel something is missing and this particular something doesn't risk
-interacting too much with syntax plugins I'll give it a fair shake. 
+- I did add markdown support for the default vim syntax file as highlighting
+is quite broken otherwise but it is unlikely I'll ever add anything 
+language-specific to Iosvkem. I consider this is the kind of things that should
+be done by the syntax file or the end user, not by colourschemes.
+I have pretty bad PTSD from looking at the code of some of the most popular
+ones that feature lots of really convoluted optional settings for some 
+languages or frameworks.  
+With that being said,If you feel something is missing and this particular 
+something doesn't risk interacting too much with syntax files or plugins I'll 
+give it a fair shake. 
 
 Don't be afraid of opening an issue or submitting a pull request. I don't bite
 and even when I do, they don't live long enough to tell.
