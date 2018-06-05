@@ -182,4 +182,9 @@ markdownUrl          greyblack      none
 markdownBoldDelimiter            red            none
 markdownItalicDelimiter          red            none
 markdownBoldItalicDelimiter      red            none
+
+rstSections          brightwhite    none        t=bold g=bold
+rstEmphasis          teal           none        t=italic g=italic
+rstStrongEmphasis    teal           none        t=bold g=bold
 # }}}
+
