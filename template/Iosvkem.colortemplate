@@ -112,9 +112,9 @@ StatusLine           white             uiblack
 StatusLineNC         white             black
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
-TabLine              white             black
-TabLineFill          white             black
-TabLineSel           white             black
+TabLine              white             uiblack
+TabLineFill          white             uiblack
+TabLineSel           white             greyblack
 Title                white             black
 VertSplit            greyblack         black
 Visual               none              uiblack 
