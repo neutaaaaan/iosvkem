@@ -108,7 +108,7 @@ SpellBad             uipink            black             s=red
 SpellCap             uiblue            black             s=blue
 SpellLocal           uipurple          black             s=purple
 SpellRare            uiteal            black             s=teal reverse
-StatusLine           white             black
+StatusLine           white             uiblack           
 StatusLineNC         white             black
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
@@ -120,7 +120,7 @@ VertSplit            greyblack         black
 Visual               none              uiblack 
 VisualNOS            none              uiblack
 WarningMsg           white             black
-WildMenu             uiblue            black
+WildMenu             uiblue            uiblack
 # Other conventional group names (see `:help group-name`)
 Boolean           -> Constant
 Character         -> Constant
