@@ -35,3 +35,13 @@ and even when I do, they don't live long enough to tell.
 The only thing I ask is that the changes be made to the template and a new .vim
 colour scheme generated. Managing changes backwards would be a nightmare.
 
+#### Installation instructions
+
+Installing Iosvkem is really complex and should only be attempted by trained
+professionals who have mastered the dark art of copying files into the right 
+folders and adding `colorscheme Iosvkem` at the bottom of a `.vimrc`.
+
+I, myself, employ a team of a dozen engineers, all ex navy-seal, to manage 
+and update my plugins of choice using [vim-plug](https://github.com/junegunn/vim-plug), like so:  
+`Plug "neutaaaaan/iosvkem"` 
+
