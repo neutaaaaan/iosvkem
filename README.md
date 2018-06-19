@@ -43,5 +43,5 @@ folders and adding `colorscheme Iosvkem` at the bottom of a `.vimrc`.
 
 I, myself, employ a team of a dozen engineers, all ex navy-seal, to manage 
 and update my plugins of choice using [vim-plug](https://github.com/junegunn/vim-plug), like so:  
-`Plug "neutaaaaan/iosvkem"` 
+`Plug 'neutaaaaan/iosvkem'` 
 
