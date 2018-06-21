@@ -48,6 +48,7 @@ Color: uiblue               #20bbfc     ~
 Color: uipurple             #bb20fc     ~   
 Color: uiamber              #fcbb20     ~   
 Color: uiblack              #303030     ~   
+Color: unnecessarilyblack   #161819     ~   
 
 Color: errorred             #ff2040     ~   
 
@@ -74,7 +75,7 @@ endif
 endverbatim
 
 # Group              Foreground        Background        Attributes
-ColorColumn          none              uiblack
+ColorColumn          none              unnecessarilyblack
 Conceal              none              none
 Cursor               none              none              reverse
 CursorColumn         white             black
@@ -109,7 +110,7 @@ SpellCap             uiblue            black             s=blue
 SpellLocal           uipurple          black             s=purple
 SpellRare            uiteal            black             s=teal reverse
 StatusLine           white             uiblack           
-StatusLineNC         white             black
+StatusLineNC         greyblack         unnecessarilyblack
 StatusLineTerm    -> StatusLine
 StatusLineTermNC  -> StatusLineNC
 TabLine              white             uiblack
