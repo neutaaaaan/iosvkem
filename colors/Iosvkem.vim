@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Thu 21 Jun 2018 11:58:27 PM CEST
+" Last Updated: mer. 11 juil. 2018 18:01:15 CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -60,9 +60,9 @@ hi CursorColumn ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE c
 hi CursorLine ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi DiffAdd ctermfg=34 ctermbg=234 guifg=#40bb40 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi DiffChange ctermfg=110 ctermbg=234 guifg=#80aacc guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi DiffChange ctermfg=239 ctermbg=234 guifg=#505050 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi DiffDelete ctermfg=167 ctermbg=234 guifg=#cc4040 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi DiffText ctermfg=214 ctermbg=234 guifg=#fcbb20 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
+hi DiffText ctermfg=110 ctermbg=234 guifg=#80aacc guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi Directory ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi EndOfBuffer ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi ErrorMsg ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -194,9 +194,9 @@ finish
 " CursorLine           none              black
 " CursorLineNr         uiblue            black
 " DiffAdd              diffgreen         black             reverse
-" DiffChange           diffblue          black             reverse
+" DiffChange           greyblack         black             reverse
 " DiffDelete           diffred           black             reverse
-" DiffText             uiamber           black             reverse
+" DiffText             diffblue          black             reverse
 " Directory            white             black
 " EndOfBuffer          white             black
 " ErrorMsg             white             black             reverse
