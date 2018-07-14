@@ -82,9 +82,9 @@ CursorColumn         white             black
 CursorLine           none              black
 CursorLineNr         uiblue            black
 DiffAdd              diffgreen         black             reverse
-DiffChange           greyblack         black             reverse
+DiffChange           diffblue            black             reverse
 DiffDelete           diffred           black             reverse
-DiffText             diffblue          black             reverse
+DiffText             white             black             reverse
 Directory            white             black
 EndOfBuffer          white             black
 ErrorMsg             white             black             reverse
