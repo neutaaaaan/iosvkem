@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: sam. 14 juil. 2018 12:08:30 CEST
+" Last Updated: Mon 30 Jul 2018 01:46:38 AM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -21,31 +21,6 @@ endif
 
 let g:colors_name = 'Iosvkem'
 
-" Color similarity table (dark background)
-"            uiblack: GUI=#303030/rgb( 48, 48, 48)  Term=236 #303030/rgb( 48, 48, 48)  [delta=0.000000]
-"        brightblack: GUI=#808080/rgb(128,128,128)  Term=244 #808080/rgb(128,128,128)  [delta=0.000000]
-"        brightwhite: GUI=#ffffff/rgb(255,255,255)  Term=231 #ffffff/rgb(255,255,255)  [delta=0.000000]
-"              white: GUI=#dddddd/rgb(221,221,221)  Term=253 #dadada/rgb(218,218,218)  [delta=0.682497]
-"          greyblack: GUI=#505050/rgb( 80, 80, 80)  Term=239 #4e4e4e/rgb( 78, 78, 78)  [delta=0.689525]
-"              black: GUI=#1b1d1e/rgb( 27, 29, 30)  Term=234 #1c1c1c/rgb( 28, 28, 28)  [delta=1.402113]
-"              green: GUI=#60aa00/rgb( 96,170,  0)  Term= 70 #5faf00/rgb( 95,175,  0)  [delta=1.461529]
-"               teal: GUI=#00aa80/rgb(  0,170,128)  Term= 36 #00af87/rgb(  0,175,135)  [delta=1.674692]
-"             uilime: GUI=#bbfc20/rgb(187,252, 32)  Term=154 #afff00/rgb(175,255,  0)  [delta=1.752062]
-"           greyblue: GUI=#6688aa/rgb(102,136,170)  Term= 67 #5f87af/rgb( 95,135,175)  [delta=1.885690]
-" unnecessarilyblack: GUI=#161819/rgb( 22, 24, 25)  Term=234 #1c1c1c/rgb( 28, 28, 28)  [delta=1.964812]
-"                red: GUI=#d02b61/rgb(208, 43, 97)  Term=161 #d7005f/rgb(215,  0, 95)  [delta=2.228908]
-"             uipink: GUI=#fc20bb/rgb(252, 32,187)  Term=199 #ff00af/rgb(255,  0,175)  [delta=2.436735]
-"             yellow: GUI=#d08928/rgb(208,137, 40)  Term=172 #d78700/rgb(215,135,  0)  [delta=2.602762]
-"             uiteal: GUI=#20fcbb/rgb( 32,252,187)  Term= 49 #00ffaf/rgb(  0,255,175)  [delta=2.766988]
-"             purple: GUI=#b77fdb/rgb(183,127,219)  Term=140 #af87d7/rgb(175,135,215)  [delta=2.975730]
-"           uipurple: GUI=#bb20fc/rgb(187, 32,252)  Term=129 #af00ff/rgb(175,  0,255)  [delta=3.113883]
-"           diffblue: GUI=#80aacc/rgb(128,170,204)  Term=110 #87afd7/rgb(135,175,215)  [delta=3.169244]
-"            uiamber: GUI=#fcbb20/rgb(252,187, 32)  Term=214 #ffaf00/rgb(255,175,  0)  [delta=4.314031]
-"          diffgreen: GUI=#40bb40/rgb( 64,187, 64)  Term= 34 #00af00/rgb(  0,175,  0)  [delta=5.245883]
-"               blue: GUI=#6c9ef8/rgb(108,158,248)  Term=111 #87afff/rgb(135,175,255)  [delta=5.367459]
-"             uiblue: GUI=#20bbfc/rgb( 32,187,252)  Term= 39 #00afff/rgb(  0,175,255)  [delta=6.574042]
-"           errorred: GUI=#ff2040/rgb(255, 32, 64)  Term=203 #ff5f5f/rgb(255, 95, 95)  [delta=7.745401]
-"            diffred: GUI=#cc4040/rgb(204, 64, 64)  Term=167 #d75f5f/rgb(215, 95, 95)  [delta=8.213229]
 if !has('gui_running') && get(g:, 'dark_transp_bg', 0)
   hi Normal ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Terminal ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -156,6 +131,24 @@ hi markdownBoldItalicDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE
 hi rstSections ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi rstEmphasis ctermfg=36 ctermbg=NONE guifg=#00aa80 guibg=NONE guisp=NONE cterm=NONE,italic gui=NONE,italic
 hi rstStrongEmphasis ctermfg=36 ctermbg=NONE guifg=#00aa80 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+let g:terminal_ansi_colors = [
+      \ '#1b1d1e',
+      \ '#d01b61',
+      \ '#60aa00',
+      \ '#d08928',
+      \ '#6c9ef8',
+      \ '#b77fdb',
+      \ '#00aa80',
+      \ '#dddddd',
+      \ '#808080',
+      \ '#d01b61',
+      \ '#60aa00',
+      \ '#d08928',
+      \ '#6c9ef8',
+      \ '#b77fdb',
+      \ '#00aa80',
+      \ '#ffffff'
+      \ ]
 finish
 
 " Background: dark

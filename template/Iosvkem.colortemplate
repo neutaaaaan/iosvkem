@@ -189,3 +189,25 @@ rstEmphasis          teal           none        t=italic g=italic
 rstStrongEmphasis    teal           none        t=bold g=bold
 # }}}
 
+# Terminal colors {{{
+verbatim
+let g:terminal_ansi_colors = [
+    \ '#1b1d1e',
+    \ '#d01b61',
+    \ '#60aa00',
+    \ '#d08928',
+    \ '#6c9ef8',
+    \ '#b77fdb',
+    \ '#00aa80',
+    \ '#dddddd',
+    \ '#808080',
+    \ '#d01b61',
+    \ '#60aa00',
+    \ '#d08928',
+    \ '#6c9ef8',
+    \ '#b77fdb',
+    \ '#00aa80',
+    \ '#ffffff'
+\ ]
+endverbatim
+# }}}
