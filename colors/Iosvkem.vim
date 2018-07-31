@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Mon 30 Jul 2018 01:46:38 AM CEST
+" Last Updated: Tue 31 Jul 2018 03:28:29 PM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -21,7 +21,7 @@ endif
 
 let g:colors_name = 'Iosvkem'
 
-if !has('gui_running') && get(g:, 'dark_transp_bg', 0)
+if !has('gui_running') && get(g:, 'Iosvkem_transp_bg', 0)
   hi Normal ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Terminal ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE gui=NONE
 else
@@ -149,6 +149,11 @@ let g:terminal_ansi_colors = [
       \ '#00aa80',
       \ '#ffffff'
       \ ]
+if get(g:, "Iosvkem_disable_italic", 0)
+  hi Comment cterm=NONE
+  hi Folded cterm=NONE
+  hi rstEmphasis cterm=NONE
+endif
 finish
 
 " Background: dark

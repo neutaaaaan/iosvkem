@@ -11,7 +11,7 @@ Website: github.com/neutaaaaan/iosvkem
 Description: Remake and minor tweaks of the colourscheme be5invis used to showcase his typeface, Iosevka.
 License: 
 Terminal Colors: 256
-Option Prefix: dark
+Option Prefix: Iosvkem
 # }}}
 
 # Documentation {{{
@@ -209,5 +209,15 @@ let g:terminal_ansi_colors = [
     \ '#00aa80',
     \ '#ffffff'
 \ ]
+endverbatim
+# }}}
+
+# Italics {{{
+verbatim
+if get(g:, "@optionprefix_disable_italic", 0)
+  hi Comment cterm=NONE
+  hi Folded cterm=NONE
+  hi rstEmphasis cterm=NONE
+endif
 endverbatim
 # }}}
