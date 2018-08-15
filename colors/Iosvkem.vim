@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Tue 31 Jul 2018 03:28:29 PM CEST
+" Last Updated: Wed 15 Aug 2018 05:27:18 AM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -96,7 +96,7 @@ hi! link Macro PreProc
 hi! link Number Constant
 hi! link Operator Statement
 hi! link PreCondit PreProc
-hi PreProc ctermfg=67 ctermbg=NONE guifg=#6688aa guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi PreProc ctermfg=67 ctermbg=NONE guifg=#5688af guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link Repeat Statement
 hi Special ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link SpecialChar Special
@@ -167,7 +167,7 @@ finish
 " Color: yellow               #d08928     ~   
 " Color: blue                 #6c9ef8     ~   
 " Color: purple               #b77fdb     ~   
-" Color: greyblue             #6688aa     ~   
+" Color: greyblue             #5688af     ~   
 " Color: teal                 #00aa80     ~   
 " Color: diffred              #cc4040     ~   
 " Color: diffgreen            #40bb40     ~   
