@@ -14,34 +14,19 @@ Having been made using [lifepillar](https://github.com/lifepillar)'s
 [Colortemplate](https://github.com/lifepillar/vim-colortemplate) plugin, it
 supports both true colours and 256 colours terminal emulators.
 
-- Iosvkem's ui is probably completely busted. I'll eventually bump into issues
-and fix them, but help is most welcome.
+- The ui is probably lacking a few things. Hit me up if you find something
+wrong.
 
-- I will eventually refactor the dayglo colours out, most likely as an option.
+- I have added a couple tweaks to fix the default syntax files for markdown and
+restructuredtext. I don't intend to add support for 3rd party syntax files if
+vim ships with a syntax file for the corresponding language unless the default
+syntax file is unequivocally garbage.
 
-- I did add markdown support for the default vim syntax file as highlighting
-is quite broken otherwise but it is unlikely I'll ever add anything 
-language-specific to Iosvkem. I consider this is the kind of things that should
-be done by the syntax file or the end user, not by colourschemes.
-I have pretty bad PTSD from looking at the code of some of the most popular
-ones that feature lots of really convoluted optional settings for some 
-languages or frameworks.  
-With that being said,If you feel something is missing and this particular 
-something doesn't risk interacting too much with syntax files or plugins I'll 
-give it a fair shake. 
-
-Don't be afraid of opening an issue or submitting a pull request. I don't bite
-and even when I do, they don't live long enough to tell.
-The only thing I ask is that the changes be made to the template and a new .vim
-colour scheme generated. Managing changes backwards would be a nightmare.
+- I have added an on/off toggle for italicized characters. Turns out you can 
+spend 5000 dollars on a machine in 2018 and still have to play the escape code
+game to get something as basic as italics working. 
 
 #### Installation instructions
 
-Installing Iosvkem is really complex and should only be attempted by trained
-professionals who have mastered the dark art of copying files into the right 
-folders and adding `colorscheme Iosvkem` at the bottom of a `.vimrc`.
-
-I, myself, employ a team of a dozen engineers, all ex navy-seal, to manage 
-and update my plugins of choice using [vim-plug](https://github.com/junegunn/vim-plug), like so:  
-`Plug 'neutaaaaan/iosvkem'` 
-
+**1998**: `Iosvkem.vim` goes in `~/.vim/colors/`.  
+**2018**: for the love of god use a plugin manager. 
