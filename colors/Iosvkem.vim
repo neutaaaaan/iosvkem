@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Wed 15 Aug 2018 05:27:18 AM CEST
+" Last Updated: Sat 25 Aug 2018 09:24:30 PM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -31,7 +31,7 @@ endif
 hi ColorColumn ctermfg=NONE ctermbg=234 guifg=NONE guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Cursor ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi CursorColumn ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
+hi CursorColumn ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi DiffAdd ctermfg=34 ctermbg=234 guifg=#40bb40 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
@@ -188,7 +188,7 @@ finish
 " ColorColumn          none              unnecessarilyblack
 " Conceal              none              none
 " Cursor               none              none              reverse
-" CursorColumn         white             black
+" CursorColumn         none              black
 " CursorLine           none              black
 " CursorLineNr         uiblue            black
 " DiffAdd              diffgreen         black             reverse
