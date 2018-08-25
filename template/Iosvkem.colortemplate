@@ -78,8 +78,8 @@ endverbatim
 ColorColumn          none              unnecessarilyblack
 Conceal              none              none
 Cursor               none              none              reverse
-CursorColumn         none              black
-CursorLine           none              black
+CursorColumn         none              uiblack
+CursorLine           none              uiblack
 CursorLineNr         uiblue            black
 DiffAdd              diffgreen         black             reverse
 DiffChange           diffblue            black             reverse
