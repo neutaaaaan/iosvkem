@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Sat 25 Aug 2018 09:34:00 PM CEST
+" Last Updated: Sun 26 Aug 2018 02:31:08 PM CEST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -28,7 +28,7 @@ else
   hi Normal ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
   hi Terminal ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 endif
-hi ColorColumn ctermfg=NONE ctermbg=234 guifg=NONE guibg=#161819 guisp=NONE cterm=NONE gui=NONE
+hi ColorColumn ctermfg=NONE ctermbg=233 guifg=NONE guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Cursor ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE,reverse gui=NONE,reverse
 hi CursorColumn ctermfg=NONE ctermbg=236 guifg=NONE guibg=#303030 guisp=NONE cterm=NONE gui=NONE
@@ -63,7 +63,7 @@ hi SpellCap ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=#6c9ef8 cte
 hi SpellLocal ctermfg=129 ctermbg=234 guifg=#bb20fc guibg=#1b1d1e guisp=#b77fdb cterm=NONE gui=NONE
 hi SpellRare ctermfg=49 ctermbg=234 guifg=#20fcbb guibg=#1b1d1e guisp=#00aa80 cterm=NONE,reverse gui=NONE,reverse
 hi StatusLine ctermfg=253 ctermbg=236 guifg=#dddddd guibg=#303030 guisp=NONE cterm=NONE gui=NONE
-hi StatusLineNC ctermfg=239 ctermbg=234 guifg=#505050 guibg=#161819 guisp=NONE cterm=NONE gui=NONE
+hi StatusLineNC ctermfg=239 ctermbg=233 guifg=#505050 guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 hi TabLine ctermfg=253 ctermbg=236 guifg=#dddddd guibg=#303030 guisp=NONE cterm=NONE gui=NONE
@@ -179,7 +179,7 @@ finish
 " Color: uipurple             #bb20fc     ~   
 " Color: uiamber              #fcbb20     ~   
 " Color: uiblack              #303030     ~   
-" Color: unnecessarilyblack   #161819     ~   
+" Color: unnecessarilyblack   #161819     233   
 " Color: errorred             #ff2040     ~   
 "     Normal           white             none
 "     Terminal         white             none

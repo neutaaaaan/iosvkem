@@ -48,7 +48,7 @@ Color: uiblue               #20bbfc     ~
 Color: uipurple             #bb20fc     ~   
 Color: uiamber              #fcbb20     ~   
 Color: uiblack              #303030     ~   
-Color: unnecessarilyblack   #161819     ~   
+Color: unnecessarilyblack   #161819     233   
 
 Color: errorred             #ff2040     ~   
 
