@@ -4,7 +4,7 @@
 " Maintainer:   neutaaaaan
 " Website:      github.com/neutaaaaan/iosvkem
 " License:      Vim License (see `:help license`)
-" Last Updated: Sun 26 Aug 2018 02:31:08 PM CEST
+" Last Updated: Fri 22 Mar 2019 11:53:55 AM CET
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -41,7 +41,7 @@ hi DiffText ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm
 hi Directory ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi EndOfBuffer ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi ErrorMsg ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,reverse
-hi FoldColumn ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
+hi FoldColumn ctermfg=253 ctermbg=233 guifg=#dddddd guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE,italic gui=NONE,italic
 hi IncSearch ctermfg=214 ctermbg=234 guifg=#fcbb20 guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,standout
 hi LineNr ctermfg=239 ctermbg=234 guifg=#505050 guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
@@ -56,12 +56,12 @@ hi PmenuThumb ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cte
 hi Question ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi! link QuickFixLine Search
 hi Search ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=NONE cterm=NONE,reverse gui=NONE,standout
-hi SignColumn ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
+hi SignColumn ctermfg=253 ctermbg=233 guifg=#dddddd guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi SpecialKey ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
-hi SpellBad ctermfg=199 ctermbg=234 guifg=#fc20bb guibg=#1b1d1e guisp=#d02b61 cterm=NONE gui=NONE
-hi SpellCap ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=#6c9ef8 cterm=NONE gui=NONE
-hi SpellLocal ctermfg=129 ctermbg=234 guifg=#bb20fc guibg=#1b1d1e guisp=#b77fdb cterm=NONE gui=NONE
-hi SpellRare ctermfg=49 ctermbg=234 guifg=#20fcbb guibg=#1b1d1e guisp=#00aa80 cterm=NONE,reverse gui=NONE,reverse
+hi SpellBad ctermfg=199 ctermbg=234 guifg=#fc20bb guibg=#1b1d1e guisp=NONE cterm=NONE,underline gui=NONE,underline
+hi SpellCap ctermfg=39 ctermbg=234 guifg=#20bbfc guibg=#1b1d1e guisp=NONE cterm=NONE,underline gui=NONE,underline
+hi SpellLocal ctermfg=129 ctermbg=234 guifg=#bb20fc guibg=#1b1d1e guisp=NONE cterm=NONE,underline gui=NONE,underline
+hi SpellRare ctermfg=49 ctermbg=234 guifg=#20fcbb guibg=#1b1d1e guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi StatusLine ctermfg=253 ctermbg=236 guifg=#dddddd guibg=#303030 guisp=NONE cterm=NONE gui=NONE
 hi StatusLineNC ctermfg=239 ctermbg=233 guifg=#505050 guibg=#161819 guisp=NONE cterm=NONE gui=NONE
 hi! link StatusLineTerm StatusLine
@@ -109,17 +109,17 @@ hi! link Tag Special
 hi Todo ctermfg=49 ctermbg=NONE guifg=#20fcbb guibg=NONE guisp=NONE cterm=NONE,bold,reverse gui=NONE,bold,standout
 hi Type ctermfg=36 ctermbg=NONE guifg=#00aa80 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi! link Typedef Type
-hi Underlined ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi Underlined ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi! link lCursor Cursor
 hi CursorIM ctermfg=NONE ctermbg=fg guifg=NONE guibg=fg guisp=NONE cterm=NONE gui=NONE
 hi ToolbarLine ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1b1d1e guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=253 ctermbg=234 guifg=#dddddd guibg=#1b1d1e guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH1 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH2 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH3 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH4 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH5 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi markdownH6 ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH1 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH2 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH3 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH4 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH5 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi markdownH6 ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi markdownLinkTextDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi markdownLinkDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi markdownListMarker ctermfg=140 ctermbg=NONE guifg=#b77fdb guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
@@ -128,7 +128,7 @@ hi markdownUrl ctermfg=239 ctermbg=NONE guifg=#505050 guibg=NONE guisp=NONE cter
 hi markdownBoldDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi markdownItalicDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi markdownBoldItalicDelimiter ctermfg=161 ctermbg=NONE guifg=#d02b61 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi rstSections ctermfg=231 ctermbg=NONE guifg=#ffffff guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi rstSections ctermfg=253 ctermbg=NONE guifg=#dddddd guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi rstEmphasis ctermfg=36 ctermbg=NONE guifg=#00aa80 guibg=NONE guisp=NONE cterm=NONE,italic gui=NONE,italic
 hi rstStrongEmphasis ctermfg=36 ctermbg=NONE guifg=#00aa80 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 let g:terminal_ansi_colors = [
@@ -198,7 +198,7 @@ finish
 " Directory            white             black
 " EndOfBuffer          white             black
 " ErrorMsg             white             black             reverse
-" FoldColumn           white             black
+" FoldColumn           white             unnecessarilyblack
 " Folded               white             black             italic
 " IncSearch            uiamber           black             t=reverse g=standout
 " LineNr               greyblack         black
@@ -213,12 +213,12 @@ finish
 " Question             white             black
 " QuickFixLine     ->  Search
 " Search               uiblue            black             t=reverse g=standout
-" SignColumn           white             black
+" SignColumn           white             unnecessarilyblack
 " SpecialKey           white             black
-" SpellBad             uipink            black             s=red
-" SpellCap             uiblue            black             s=blue
-" SpellLocal           uipurple          black             s=purple
-" SpellRare            uiteal            black             s=teal reverse
+" SpellBad             uipink            black             term=underline g=underline
+" SpellCap             uiblue            black             term=underline g=underline
+" SpellLocal           uipurple          black             term=underline g=underline
+" SpellRare            uiteal            black             term=underline g=underline
 " StatusLine           white             uiblack           
 " StatusLineNC         greyblack         unnecessarilyblack
 " StatusLineTerm    -> StatusLine
@@ -266,17 +266,17 @@ finish
 " Todo                 uiteal            none              t=reverse,bold g=standout,bold
 " Type                 teal              none
 " Typedef           -> Type
-" Underlined           white             none
+" Underlined           white             none 		 t=underline g=underline
 " lCursor           -> Cursor
 " CursorIM             none              fg
 " ToolbarLine          none              black
 " ToolbarButton        white             black             bold
-" markdownH1           brightwhite    none        t=bold g=bold
-" markdownH2           brightwhite    none        t=bold g=bold
-" markdownH3           brightwhite    none        t=bold g=bold
-" markdownH4           brightwhite    none        t=bold g=bold
-" markdownH5           brightwhite    none        t=bold g=bold
-" markdownH6           brightwhite    none        t=bold g=bold
+" markdownH1           white    none        t=bold g=bold
+" markdownH2           white    none        t=bold g=bold
+" markdownH3           white    none        t=bold g=bold
+" markdownH4           white    none        t=bold g=bold
+" markdownH5           white    none        t=bold g=bold
+" markdownH6           white    none        t=bold g=bold
 " markdownLinkTextDelimiter        red            none
 " markdownLinkDelimiter            red            none
 " markdownListMarker   purple         none        t=bold g=bold
@@ -285,6 +285,6 @@ finish
 " markdownBoldDelimiter            red            none
 " markdownItalicDelimiter          red            none
 " markdownBoldItalicDelimiter      red            none
-" rstSections          brightwhite    none        t=bold g=bold
+" rstSections          white	    none        t=bold g=bold
 " rstEmphasis          teal           none        t=italic g=italic
 " rstStrongEmphasis    teal           none        t=bold g=bold

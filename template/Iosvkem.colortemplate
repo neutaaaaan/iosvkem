@@ -88,7 +88,7 @@ DiffText             white             black             reverse
 Directory            white             black
 EndOfBuffer          white             black
 ErrorMsg             white             black             reverse
-FoldColumn           white             black
+FoldColumn           white             unnecessarilyblack
 Folded               white             black             italic
 IncSearch            uiamber           black             t=reverse g=standout
 LineNr               greyblack         black
@@ -103,12 +103,12 @@ PmenuThumb           white             black
 Question             white             black
 QuickFixLine     ->  Search
 Search               uiblue            black             t=reverse g=standout
-SignColumn           white             black
+SignColumn           white             unnecessarilyblack
 SpecialKey           white             black
-SpellBad             uipink            black             s=red
-SpellCap             uiblue            black             s=blue
-SpellLocal           uipurple          black             s=purple
-SpellRare            uiteal            black             s=teal reverse
+SpellBad             uipink            black             term=underline g=underline
+SpellCap             uiblue            black             term=underline g=underline
+SpellLocal           uipurple          black             term=underline g=underline
+SpellRare            uiteal            black             term=underline g=underline
 StatusLine           white             uiblack           
 StatusLineNC         greyblack         unnecessarilyblack
 StatusLineTerm    -> StatusLine
@@ -157,7 +157,7 @@ Tag               -> Special
 Todo                 uiteal            none              t=reverse,bold g=standout,bold
 Type                 teal              none
 Typedef           -> Type
-Underlined           white             none
+Underlined           white             none 		 t=underline g=underline
 # See `:help lCursor`
 lCursor           -> Cursor
 # See `:help CursorIM`
@@ -169,12 +169,12 @@ ToolbarButton        white             black             bold
 
 # Additional highlight groups {{{
 # Add additional highlight groups here if you want
-markdownH1           brightwhite    none        t=bold g=bold
-markdownH2           brightwhite    none        t=bold g=bold
-markdownH3           brightwhite    none        t=bold g=bold
-markdownH4           brightwhite    none        t=bold g=bold
-markdownH5           brightwhite    none        t=bold g=bold
-markdownH6           brightwhite    none        t=bold g=bold
+markdownH1           white    none        t=bold g=bold
+markdownH2           white    none        t=bold g=bold
+markdownH3           white    none        t=bold g=bold
+markdownH4           white    none        t=bold g=bold
+markdownH5           white    none        t=bold g=bold
+markdownH6           white    none        t=bold g=bold
 markdownLinkTextDelimiter        red            none
 markdownLinkDelimiter            red            none
 markdownListMarker   purple         none        t=bold g=bold
@@ -184,7 +184,7 @@ markdownBoldDelimiter            red            none
 markdownItalicDelimiter          red            none
 markdownBoldItalicDelimiter      red            none
 
-rstSections          brightwhite    none        t=bold g=bold
+rstSections          white	    none        t=bold g=bold
 rstEmphasis          teal           none        t=italic g=italic
 rstStrongEmphasis    teal           none        t=bold g=bold
 # }}}
