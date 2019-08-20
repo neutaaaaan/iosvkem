@@ -1,16 +1,15 @@
-# vim: ft=colortemplate fdm=marker
+# vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
 
 # Information {{{
 # Mandatory
-Full name:   Iosvkem
-Short name:  Iosvkem
-Author:      neutaaaaan
-Maintainer:  neutaaaaan
+Full name:     Iosvkem
+Short name:    Iosvkem
+Author:        neutaaaaan
 # Optional
-Website: github.com/neutaaaaan/iosvkem
-Description: Remake and minor tweaks of the colourscheme be5invis used to showcase his typeface, Iosevka.
-License: 
-Terminal Colors: 256
+Maintainer:    neutaaaaan
+Website:       https://github.com/neutaaaaan/iosvkem
+Description:   Iosvekva specimen + alien fruit salad
+License:       Public domain
 Option Prefix: Iosvkem
 # }}}
 
@@ -18,150 +17,153 @@ Option Prefix: Iosvkem
 Include: _help.colortemplate
 # }}}
 
+# Global definitions - put at the top of the colorscheme {{{
+QuickFixLine         -> Search
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+Boolean              -> Constant
+Character            -> Constant
+Conditional          -> Statement
+Define               -> PreProc
+Debug                -> Special
+Delimiter            -> Special
+Exception            -> Statement
+Float                -> Constant
+Function             -> Identifier
+Include              -> PreProc
+Keyword              -> Statement
+Label                -> Statement
+Macro                -> PreProc
+Number               -> Constant
+Operator             -> Statement
+PreCondit            -> PreProc
+Repeat               -> Statement
+SpecialChar          -> Special
+SpecialComment       -> Special
+StorageClass         -> Type
+# String               -> Constant
+Structure            -> Type
+Tag                  -> Special
+Typedef              -> Type
+# See `:help lCursor`
+lCursor              -> Cursor
+# }}}
+
 Background: dark
 
-# Color palette {{{
-# Color name                GUI         Base256    Base16 (optional)
-Color: black                #1b1d1e     ~   
-Color: greyblack            #505050     ~   
-Color: brightblack          #808080     ~   
+# Color palette for dark variant {{{
+# Color name                GUI                  Base256    Base16 (optional)
+Color: black                #1b1d1e                ~          
+Color: greyblack            #505050                ~          
+Color: brightblack          #707070                ~          
 
-Color: white                #dddddd     ~   
-Color: brightwhite          #ffffff     ~   
+Color: white                #dddddd                ~          
+Color: brightwhite          #ffffff                ~          
 
-Color: red                  #d02b61     ~   
-Color: green                #60aa00     ~   
-Color: yellow               #d08928     ~   
-Color: blue                 #6c9ef8     ~   
-Color: purple               #b77fdb     ~   
-Color: greyblue             #5688af     ~   
-Color: teal                 #00aa80     ~   
+Color: red                  #d02b61                ~          
+Color: green                #60aa00                ~          
+Color: yellow               #d08928                ~          
+Color: blue                 #6c9ef8                ~          
+Color: monoblue             #57aadd                ~          
+Color: greyblue             #5688af                ~          
+Color: purple               #b77fdb                ~          
+Color: teal                 #00aa80                ~          
 
-Color: diffred              #cc4040     ~   
-Color: diffgreen            #40bb40     ~   
-Color: diffblue             #80aacc     ~   
+Color: diffred              #cc4040                ~          
+Color: diffgreen            #40bb40                ~          
+Color: diffblue             #80aacc                ~          
+                                                                
+Color: uipink               #fc20bb                ~          
+Color: uilime               #bbfc20                ~          
+Color: uiteal               #20fcbb                ~                                      
+Color: uiblue               #20bbfc                ~          
+Color: uipurple             #bb20fc                ~          
+Color: uiamber              #fcbb20                ~          
+Color: uiblack              #303030                ~          
+Color: vantablack           #161819               233         
 
-Color: uipink               #fc20bb     ~   
-Color: uilime               #bbfc20     ~   
-Color: uiteal               #20fcbb     ~   
-Color: uiblue               #20bbfc     ~   
-Color: uipurple             #bb20fc     ~   
-Color: uiamber              #fcbb20     ~   
-Color: uiblack              #303030     ~   
-Color: unnecessarilyblack   #161819     233   
-
-Color: errorred             #ff2040     ~   
-
-
+Color: errorred             #ff2040                ~          
 # You may use hexadecimal values, too, and you may provide an explicit base-256 color:
 # }}}
 
-# Default highlight groups {{{
-verbatim
-if !has('gui_running') && get(g:, '@optionprefix_transp_bg', 0)
-endverbatim
-    # Transparent background
+# Terminal colors for dark variant {{{
+Term colors: black red green yellow blue purple teal white
+Term colors: brightblack red green yellow blue purple teal brightwhite
+# }}}
+
+# Definitions common to all variants {{{
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 
     Normal           white             none
-    # See `:help terminal-size-color`
     Terminal         white             none
-verbatim
-else
-endverbatim
-    # Opaque background
+#else
     Normal           white             black
     Terminal         white             black
-verbatim
-endif
-endverbatim
+#endif
 
 # Group              Foreground        Background        Attributes
-ColorColumn          none              unnecessarilyblack
+ColorColumn          none              vantablack
 Conceal              none              none
 Cursor               none              none              reverse
 CursorColumn         none              uiblack
 CursorLine           none              uiblack
 CursorLineNr         uiblue            black
 DiffAdd              diffgreen         black             reverse
-DiffChange           diffblue            black             reverse
+DiffChange           diffblue          black             reverse
 DiffDelete           diffred           black             reverse
 DiffText             white             black             reverse
 Directory            white             black
 EndOfBuffer          white             black
 ErrorMsg             white             black             reverse
-FoldColumn           white             unnecessarilyblack
+FoldColumn           white             vantablack
 Folded               white             black             italic
-IncSearch            uiamber           black             t=reverse g=standout
+IncSearch            uiamber           black             reverse
 LineNr               greyblack         black
-MatchParen           uipink            black             t=bold,reverse g=bold,standout
+MatchParen           uipink            black             bold
 ModeMsg              white             black
 MoreMsg              white             black
-NonText              white             black  
+NonText              white             black
 Pmenu                white             uiblack
 PmenuSbar            white             black
-PmenuSel             uipink            uiblack           t=bold g=bold 
+PmenuSel             uipink            uiblack           bold
 PmenuThumb           white             black
 Question             white             black
-QuickFixLine     ->  Search
-Search               uiblue            black             t=reverse g=standout
-SignColumn           white             unnecessarilyblack
+Search               uiblue            black             reverse
+SignColumn           white             vantablack
 SpecialKey           white             black
-SpellBad             uipink            black             term=underline g=underline
-SpellCap             uiblue            black             term=underline g=underline
-SpellLocal           uipurple          black             term=underline g=underline
-SpellRare            uiteal            black             term=underline g=underline
-StatusLine           white             uiblack           
-StatusLineNC         greyblack         unnecessarilyblack
-StatusLineTerm    -> StatusLine
-StatusLineTermNC  -> StatusLineNC
+SpellBad             uipink            black             underline
+SpellCap             uiblue            black             underline
+SpellLocal           uipurple          black             underline
+SpellRare            uiteal            black             underline
+StatusLine           white             uiblack
+StatusLineNC         greyblack         vantablack
 TabLine              white             uiblack
 TabLineFill          white             uiblack
 TabLineSel           white             greyblack
 Title                white             black
 VertSplit            greyblack         black
-Visual               none              uiblack 
+Visual               none              uiblack
 VisualNOS            none              uiblack
 WarningMsg           white             black
 WildMenu             uiblue            uiblack
 # Other conventional group names (see `:help group-name`)
-Boolean           -> Constant
-Character         -> Constant
-Comment              brightblack       none              t=italic g=italic
-Conditional       -> Statement
+Comment              brightblack       none              italic
 Constant             green             none
-Define            -> PreProc
-Debug             -> Special
-Delimiter         -> Special
-Error                errorred          black             t=reverse,bold g=standout,bold
-Exception         -> Statement
-Float             -> Constant
-Function          -> Identifier
+Error                errorred          black             reverse,bold
 Identifier           purple            none
 Ignore               white             none
-Include           -> PreProc
-Keyword           -> Statement
-Label             -> Statement
-Macro             -> PreProc
-Number            -> Constant
-Operator          -> Statement
-PreCondit         -> PreProc
 PreProc              greyblue          none
-Repeat            -> Statement
 Special              red               none
-SpecialChar       -> Special
-SpecialComment    -> Special
 Statement            blue              none
-StorageClass      -> Type
-String               yellow            none
-Structure         -> Type
-Tag               -> Special
-Todo                 uiteal            none              t=reverse,bold g=standout,bold
+String               yellow            black
+Todo                 uiteal            none              reverse,bold
 Type                 teal              none
-Typedef           -> Type
-Underlined           white             none 		 t=underline g=underline
-# See `:help lCursor`
-lCursor           -> Cursor
+Underlined           white             none              underline
 # See `:help CursorIM`
-CursorIM             none              fg
+CursorIM             black             uilime
 # See `:help window-toolbar`
 ToolbarLine          none              black
 ToolbarButton        white             black             bold
@@ -169,47 +171,39 @@ ToolbarButton        white             black             bold
 
 # Additional highlight groups {{{
 # Add additional highlight groups here if you want
-markdownH1           white    none        t=bold g=bold
-markdownH2           white    none        t=bold g=bold
-markdownH3           white    none        t=bold g=bold
-markdownH4           white    none        t=bold g=bold
-markdownH5           white    none        t=bold g=bold
-markdownH6           white    none        t=bold g=bold
-markdownLinkTextDelimiter        red            none
-markdownLinkDelimiter            red            none
-markdownListMarker   purple         none        t=bold g=bold
-markdownLinkText     blue           none
-markdownUrl          greyblack      none
-markdownBoldDelimiter            red            none
-markdownItalicDelimiter          red            none
-markdownBoldItalicDelimiter      red            none
+markdownH1           white             none              bold
+markdownH2           white             none              bold
+markdownH3           white             none              bold
+markdownH4           white             none              bold
+markdownH5           white             none              bold
+markdownH6           white             none              bold
+markdownLinkTextDelimiter     red      none
+markdownLinkDelimiter         red      none
+markdownListMarker   purple            none              bold
+markdownLinkText     monoblue          none
+markdownUrl          greyblack         none
+markdownRule	       red               none              bold
+markdownId	         teal              none
+markdownIdDeclaration	        teal     none
+markdownBold	       white             none              bold
+markdownItalic	     white             none              italic
+markdownBoldItalic   white             none              bold,italic
+markdownBoldDelimiter         red      none
+markdownItalicDelimiter       red      none
+markdownBoldItalicDelimiter   red      none
 
-rstSections          white	    none        t=bold g=bold
-rstEmphasis          teal           none        t=italic g=italic
-rstStrongEmphasis    teal           none        t=bold g=bold
-# }}}
+rstSections          white	           none              bold
+rstEmphasis          white             none              italic
+rstStrongEmphasis    white             none              bold
+rstInterpretedTextOrHyperlinkReference purple   none
+rstStandAloneHyperlink        monoblue none
+rstHyperlinktarget   monoblue          none
+rstCitationReference teal              none
 
-# Terminal colors {{{
-verbatim
-let g:terminal_ansi_colors = [
-    \ '#1b1d1e',
-    \ '#d01b61',
-    \ '#60aa00',
-    \ '#d08928',
-    \ '#6c9ef8',
-    \ '#b77fdb',
-    \ '#00aa80',
-    \ '#dddddd',
-    \ '#808080',
-    \ '#d01b61',
-    \ '#60aa00',
-    \ '#d08928',
-    \ '#6c9ef8',
-    \ '#b77fdb',
-    \ '#00aa80',
-    \ '#ffffff'
-\ ]
-endverbatim
+diffFile             greyblue          none
+diffAdded            teal              none
+diffRemoved          red               none
+diffLine             purple            none
 # }}}
 
 # Italics {{{
@@ -217,7 +211,11 @@ verbatim
 if get(g:, "@optionprefix_disable_italic", 0)
   hi Comment cterm=NONE
   hi Folded cterm=NONE
+  hi markdownBoldItalic cterm=bold,underline
   hi rstEmphasis cterm=NONE
 endif
 endverbatim
 # }}}
+
+Include: _bw_neutaaaaan.colortemplate
+

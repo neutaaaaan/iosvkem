@@ -1,32 +1,28 @@
-![image](https://i.imgur.com/nZ1ttMy.png)
+![image](https://i.imgur.com/n9qgnHU.png)
 
 
-**Iosvkem** is a dark colourscheme based on the colourscheme made by
-[Belleve Invis](https://github.com/be5invis) to showcase his typeface 
+**Iosvkem** is a dark colourscheme based on the colourscheme designed by
+[Belleve Invis](https://github.com/be5invis) to showcase their typeface 
 [Iosevka](https://be5invis.github.io/Iosevka/). 
 
-A few tweaks were made and a bunch of unnecessarily bright colours have been
-added for the ui but the main colours remain very close to the original
-colourscheme.
+It supports both true colours and 256 colours terminal emulators. There is 
+some limited support for monochrome terminals, which I can only hope will be 
+useful to our children as they hide from the radioactive fallout in underground
+bunkers.
 
-Having been made using [lifepillar](https://github.com/lifepillar)'s
-*so good it should ship with vim* 
-[Colortemplate](https://github.com/lifepillar/vim-colortemplate) plugin, it
-supports both true colours and 256 colours terminal emulators.
+I have no interest in supporting 3rd party plugins, or alternative syntax files
+unless the default files that ship with vim are broken or inferior to the point
+of being useless.
 
-- The ui is probably lacking a few things. Hit me up if you find something
-wrong.
+I have had to rewire a few things for markdown, rst and diffs to work properly,
+but the rest of the theme respects the conventions built-in within vim. 
+Switching from Iosvkem to another theme shouldn't break anything else.
 
-- I have added a couple tweaks to fix the default syntax files for markdown and
-restructuredtext. I don't intend to add support for 3rd party syntax files if
-vim ships with a syntax file for the corresponding language unless the default
-syntax file is unequivocally garbage.
 
-- I have added an on/off toggle for italicized characters. Turns out you can 
-spend 5000 dollars on a machine in 2018 and still have to play the escape code
-game to get something as basic as italics working. 
+Iosvkem was made using [colortemplate](https://github.com/lifepillar/vim-colortemplate).
+It's good. Try it.
 
 #### Installation instructions
 
 **1998**: `Iosvkem.vim` goes in `~/.vim/colors/`.  
-**2018**: for the love of god use a plugin manager. 
+**2019**: for the love of god use a plugin manager. 
