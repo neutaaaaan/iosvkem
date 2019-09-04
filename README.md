@@ -1,9 +1,10 @@
 ![image](https://i.imgur.com/n9qgnHU.png)
 
-
-**Iosvkem** is a dark colourscheme based on the colourscheme designed by
-[Belleve Invis](https://github.com/be5invis) to showcase their typeface 
-[Iosevka](https://be5invis.github.io/Iosevka/). 
+**Iosvkem** is a colourscheme based on the default dark theme for [Adobe Brackets](https://github.com/adobe/brackets).  
+It got its name from the [Iosevka](https://be5invis.github.io/Iosevka/) 
+typeface, as its website is where I first noticed the colourscheme, and, Google
+having become impossibly hard to wrangle valid results out of, especially with
+specific queries, assumed it was original.
 
 It supports both true colours and 256 colours terminal emulators. There is 
 some limited support for monochrome terminals, which I can only hope will be 
