@@ -47,6 +47,9 @@ Tag                  -> Special
 Typedef              -> Type
 # See `:help lCursor`
 lCursor              -> Cursor
+# Custom
+debugBreakpoint      -> ModeMsg
+debugPC              -> CursorLine
 # }}}
 
 Background: dark
@@ -54,6 +57,7 @@ Background: dark
 # Color palette for dark variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
 Color: black                #1b1d1e                ~          
+Color: linenrblack          #404040                ~          
 Color: greyblack            #505050                ~          
 Color: brightblack          #707070                ~          
 
@@ -72,6 +76,7 @@ Color: teal                 #00aa80                ~
 Color: diffred              #cc4040                ~          
 Color: diffgreen            #40bb40                ~          
 Color: diffblue             #80aacc                ~          
+Color: diffpink 	          #d496d7                ~
                                                                 
 Color: uipink               #fc20bb                ~          
 Color: uilime               #bbfc20                ~          
@@ -82,7 +87,7 @@ Color: uiamber              #fcbb20                ~
 Color: uiblack              #303030                ~          
 Color: vantablack           #161819               233         
 
-Color: errorred             #ff2040                ~          
+Color: errorred             #ff2040               197
 # You may use hexadecimal values, too, and you may provide an explicit base-256 color:
 # }}}
 
@@ -114,21 +119,21 @@ CursorLineNr         uiblue            black
 DiffAdd              diffgreen         black             reverse
 DiffChange           diffblue          black             reverse
 DiffDelete           diffred           black             reverse
-DiffText             white             black             reverse
+DiffText             diffpink          black             reverse
 Directory            white             black
 EndOfBuffer          white             black
 ErrorMsg             white             black             reverse
 FoldColumn           white             vantablack
 Folded               white             black             italic
 IncSearch            uiamber           black             reverse
-LineNr               greyblack         black
+LineNr               linenrblack       black
 MatchParen           uipink            black             bold
-ModeMsg              white             black
+ModeMsg              white             black             bold
 MoreMsg              white             black
 NonText              white             black
-Pmenu                white             uiblack
+Pmenu                black             diffblue
 PmenuSbar            white             black
-PmenuSel             uipink            uiblack           bold
+PmenuSel             black             diffpink
 PmenuThumb           white             black
 Question             white             black
 Search               uiblue            black             reverse
@@ -138,7 +143,7 @@ SpellBad             uipink            black             underline
 SpellCap             uiblue            black             underline
 SpellLocal           uipurple          black             underline
 SpellRare            uiteal            black             underline
-StatusLine           white             uiblack
+StatusLine           white             uiblack           bold
 StatusLineNC         greyblack         vantablack
 TabLine              white             uiblack
 TabLineFill          white             uiblack
@@ -206,15 +211,6 @@ diffRemoved          red               none
 diffLine             purple            none
 # }}}
 
-# Italics {{{
-verbatim
-if get(g:, "@optionprefix_disable_italic", 0)
-  hi Comment cterm=NONE
-  hi Folded cterm=NONE
-  hi markdownBoldItalic cterm=bold,underline
-  hi rstEmphasis cterm=NONE
-endif
-endverbatim
 # }}}
 
 Include: _bw_neutaaaaan.colortemplate

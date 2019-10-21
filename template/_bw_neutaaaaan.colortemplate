@@ -20,7 +20,7 @@ Directory            omit   omit
 EndOfBuffer          omit   omit
 ErrorMsg             omit   omit    bold,reverse,italic
 FoldColumn           omit   omit    reverse
-Folded               omit   omit    italic,underline
+Folded               omit   omit    italic
 IncSearch            omit   omit    reverse,bold,italic
 LineNr               omit   omit
 MatchParen           omit   omit    bold,underline
@@ -39,8 +39,8 @@ SpellBad             omit   omit    underline,italic
 SpellCap             omit   omit    underline,italic
 SpellLocal           omit   omit    underline,italic
 SpellRare            omit   omit    underline,italic
-StatusLine           omit   omit    bold
-StatusLineNC         omit   omit    reverse
+StatusLine           omit   omit    reverse,bold
+StatusLineNC         omit   omit    underline
 TabLine              omit   omit    
 TabLineFill          omit   omit
 TabLineSel           omit   omit    bold
@@ -51,15 +51,15 @@ VisualNOS            omit   omit
 WarningMsg           omit   omit    standout
 WildMenu             omit   omit    bold
 # Other conventional group names (see `:help group-name`)
-Comment              omit   omit    reverse
+Comment              omit   omit    bold
 Constant             omit   omit
 Error                omit   omit    reverse,bold
 Identifier           omit   omit
 Ignore               omit   omit
 PreProc              omit   omit
 Special              omit   omit
-Statement            omit   omit    bold
-Todo                 omit   omit    bold,underline
+Statement            omit   omit
+Todo                 omit   omit    reverse,bold
 Type                 omit   omit
 Underlined           omit   omit    underline
 CursorIM             omit   omit
