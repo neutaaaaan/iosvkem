@@ -56,7 +56,7 @@ Background: dark
 
 # Color palette for dark variant {{{
 # Color name                GUI                  Base256    Base16 (optional)
-Color: black                #1b1d1e                ~          
+Color: black                #121212                ~          
 Color: linenrblack          #404040                ~          
 Color: greyblack            #505050                ~          
 Color: brightblack          #707070                ~          
@@ -85,7 +85,7 @@ Color: uiblue               #20bbfc                ~
 Color: uipurple             #bb20fc                ~          
 Color: uiamber              #fcbb20                ~          
 Color: uiblack              #303030                ~          
-Color: vantablack           #161819               233         
+Color: vantablack           #080808                ~         
 
 Color: errorred             #ff2040               197
 # You may use hexadecimal values, too, and you may provide an explicit base-256 color:
@@ -130,7 +130,7 @@ LineNr               linenrblack       black
 MatchParen           uipink            black             bold
 ModeMsg              white             black             bold
 MoreMsg              white             black
-NonText              white             black
+NonText              brightblack       black
 Pmenu                black             diffblue
 PmenuSbar            white             black
 PmenuSel             black             diffpink
@@ -184,12 +184,12 @@ markdownH5           white             none              bold
 markdownH6           white             none              bold
 markdownLinkTextDelimiter     red      none
 markdownLinkDelimiter         red      none
-markdownListMarker   purple            none              bold
+markdownListMarker   red               none              bold
 markdownLinkText     monoblue          none
 markdownUrl          greyblack         none
 markdownRule	       red               none              bold
-markdownId	         teal              none
-markdownIdDeclaration	        teal     none
+markdownId	         purple            none
+markdownIdDeclaration	        purple   none
 markdownBold	       white             none              bold
 markdownItalic	     white             none              italic
 markdownBoldItalic   white             none              bold,italic
@@ -203,7 +203,7 @@ rstStrongEmphasis    white             none              bold
 rstInterpretedTextOrHyperlinkReference purple   none
 rstStandAloneHyperlink        monoblue none
 rstHyperlinktarget   monoblue          none
-rstCitationReference teal              none
+rstCitationReference purple            none
 
 diffFile             greyblue          none
 diffAdded            teal              none

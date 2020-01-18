@@ -1,4 +1,4 @@
-![image](https://i.imgur.com/n9qgnHU.png)
+![image](https://i.imgur.com/tZNCzzB.png)
 
 **Iosvkem** is a colourscheme based on the default dark theme for [Adobe Brackets](https://github.com/adobe/brackets).  
 It got its name from the [Iosevka](https://be5invis.github.io/Iosevka/) 
