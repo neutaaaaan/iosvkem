@@ -1,10 +1,8 @@
-![image](https://i.imgur.com/tZNCzzB.png)
+![image](https://i.ibb.co/kgDDYD4/iosvkem-dark.png)
 
 **Iosvkem** is a colourscheme based on the default dark theme for [Adobe Brackets](https://github.com/adobe/brackets).  
 It got its name from the [Iosevka](https://be5invis.github.io/Iosevka/) 
-typeface, as its website is where I first noticed the colourscheme, and, Google
-having become impossibly hard to wrangle valid results out of, especially with
-specific queries, assumed it was original.
+typeface, as its website is where I first noticed the colourscheme.
 
 It supports both true colours and 256 colours terminal emulators. There is 
 some limited support for monochrome terminals, which I can only hope will be 
@@ -23,7 +21,3 @@ Switching from Iosvkem to another theme shouldn't break anything else.
 Iosvkem was made using [colortemplate](https://github.com/lifepillar/vim-colortemplate).
 It's good. Try it.
 
-#### Installation instructions
-
-**1998**: `Iosvkem.vim` goes in `~/.vim/colors/`.  
-**2019**: for the love of god use a plugin manager. 

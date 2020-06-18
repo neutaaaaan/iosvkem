@@ -18,13 +18,13 @@ DiffDelete           omit   omit    reverse
 DiffText             omit   omit    bold
 Directory            omit   omit
 EndOfBuffer          omit   omit
-ErrorMsg             omit   omit    bold,reverse,italic
+ErrorMsg             omit   omit    bold,reverse
 FoldColumn           omit   omit    reverse
 Folded               omit   omit    italic
-IncSearch            omit   omit    reverse,bold,italic
+IncSearch            omit   omit    reverse,bold,underline
 LineNr               omit   omit
 MatchParen           omit   omit    bold,underline
-ModeMsg              omit   omit
+ModeMsg              omit   omit    bold
 MoreMsg              omit   omit
 NonText              omit   omit
 Pmenu                omit   omit    reverse
@@ -32,13 +32,13 @@ PmenuSbar            omit   omit
 PmenuSel             omit   omit
 PmenuThumb           omit   omit
 Question             omit   omit    standout
-Search               omit   omit    underline,italic,bold
+Search               omit   omit    reverse
 SignColumn           omit   omit    reverse
 SpecialKey           omit   omit    bold
-SpellBad             omit   omit    underline,italic
-SpellCap             omit   omit    underline,italic
-SpellLocal           omit   omit    underline,italic
-SpellRare            omit   omit    underline,italic
+SpellBad             omit   omit    underline
+SpellCap             omit   omit    underline
+SpellLocal           omit   omit    underline
+SpellRare            omit   omit    underline
 StatusLine           omit   omit    reverse,bold
 StatusLineNC         omit   omit    underline
 TabLine              omit   omit    
