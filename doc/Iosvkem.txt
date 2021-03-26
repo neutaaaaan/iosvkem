@@ -1,4 +1,4 @@
-*Iosvkem.txt*	For Vim version 8.2	Last change: 2020 Jun 18
+*Iosvkem.txt*	For Vim version 8.2	Last change: 2021 Mar 25
 
 
 		  Iosvkem color scheme    by neutaaaaan

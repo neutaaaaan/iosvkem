@@ -1,23 +1,23 @@
-# vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
 
-# Information {{{
-# Mandatory
+; Information {{{
+; Mandatory
 Full name:     Iosvkem
 Short name:    Iosvkem
 Author:        neutaaaaan
-# Optional
+; Optional
 Maintainer:    neutaaaaan
 Website:       https://github.com/neutaaaaan/iosvkem
 Description:   Adobe Brackets + Iosevka Specimen + alien fruit salad
 License:       Public domain
 Option Prefix: Iosvkem
-# }}}
+; }}}
 
-# Documentation {{{
+; Documentation {{{
 Include: _help.colortemplate
-# }}}
+; }}}
 
-# Global definitions - put at the top of the colorscheme {{{
+; Global definitions - put at the top of the colorscheme {{{
 QuickFixLine         -> Search
 StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
@@ -41,21 +41,21 @@ Repeat               -> Statement
 SpecialChar          -> Special
 SpecialComment       -> Special
 StorageClass         -> Type
-# String               -> Constant
+; String               -> Constant
 Structure            -> Type
 Tag                  -> Special
 Typedef              -> Type
-# See `:help lCursor`
+; See `:help lCursor`
 lCursor              -> Cursor
-# Custom
+; Custom
 debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
-# }}}
+; }}}
 
 Background: dark
 
-# Color palette for dark variant {{{
-# Color name                GUI                  Base256    Base16 (optional)
+; Color palette for dark variant {{{
+; Color name                GUI                  Base256    Base16 (optional)
 Color: black                #080808                ~
 Color: linenrblack          #404040                ~          
 Color: brightblack          #707070                ~          
@@ -66,7 +66,7 @@ Color: brightwhite          #ffffff                ~
 Color: red                  #d02b61                ~          
 Color: green                #60aa00                ~          
 Color: yellow               #d08928                ~          
-Color: blue                 #6c9ef8                ~          
+Color: blue                 #6693e8                ~
 Color: monoblue             #57aadd                ~          
 Color: greyblue             #5688af                ~          
 Color: purple               #b77fdb                ~          
@@ -77,38 +77,38 @@ Color: diffgreen            #40bb40                ~
 Color: diffblue             #80aacc                ~          
 Color: diffpink 	          #d496d7                ~
                                                                 
-Color: uipink               #fc20bb                ~          
-Color: uilime               #bbfc20                ~          
-Color: uiteal               #20fcbb                ~                                      
-Color: uiblue               #20bbfc                ~          
-Color: uipurple             #bb20fc                ~          
-Color: uiamber              #fcbb20                ~          
+Color: uipink               #fc20bb                ~ 
+Color: uilime               #bbfc20                ~
+Color: uiteal               #20fcbb                ~
+Color: uiblue               #20bbfc                ~
+Color: uipurple             #bb20fc                ~
+Color: uiamber              #fcbb20                ~
 Color: uiblack              #303030                ~          
 Color: yasogrey             #1c1c1c                ~
 
 Color: errorred             #ff2040               197
-# You may use hexadecimal values, too, and you may provide an explicit base-256 color:
-# }}}
+; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
+; }}}
 
-# Terminal colors for dark variant {{{
+; Terminal colors for dark variant {{{
 Term colors: black red green yellow blue purple teal white
 Term colors: brightblack red green yellow blue purple teal brightwhite
-# }}}
+; }}}
 
-# Definitions common to all variants {{{
+; Definitions common to all variants {{{
 Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+;if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
 Variant: 256 
-#if get(g:, '@optionprefix_transp_bg', 0)
+;if get(g:, '@optionprefix_transp_bg', 0)
 Variant: gui 256 
     Normal           white             none
     Terminal         white             none
-#else
+;else
     Normal           white             black
     Terminal         white             black
-#endif
+;endif
 
-# Group              Foreground        Background        Attributes
+; Group              Foreground        Background        Attributes
 ColorColumn          none              yasogrey
 Conceal              none              none
 Cursor               none              none              reverse
@@ -152,8 +152,8 @@ VertSplit            brightblack       black
 Visual               none              uiblack
 VisualNOS            none              uiblack
 WarningMsg           white             black
-WildMenu             uiblue            uiblack
-# Other conventional group names (see `:help group-name`)
+WildMenu             uiblue            uiblack           bold
+; Other conventional group names (see `:help group-name`)
 Comment              brightblack       none              italic
 Constant             green             none
 Error                errorred          black             reverse,bold
@@ -166,15 +166,15 @@ String               yellow            none
 Todo                 uiteal            none              reverse,bold
 Type                 teal              none
 Underlined           white             none              underline
-# See `:help CursorIM`
+; See `:help CursorIM`
 CursorIM             black             uilime
-# See `:help window-toolbar`
+; See `:help window-toolbar`
 ToolbarLine          none              black
 ToolbarButton        white             black             bold
-# }}}
+; }}}
 
-# Additional highlight groups {{{
-# Add additional highlight groups here if you want
+; Additional highlight groups {{{
+; Add additional highlight groups here if you want
 markdownH1           white             none              bold
 markdownH2           white             none              bold
 markdownH3           white             none              bold
@@ -208,9 +208,9 @@ diffFile             greyblue          none
 diffAdded            teal              none
 diffRemoved          red               none
 diffLine             purple            none
-# }}}
+; }}}
 
-# }}}
+; }}}
 
 Include: _bw_neutaaaaan.colortemplate
 
